@@ -5,4 +5,4 @@ task:
     image: gcr.io/kaniko-project/executor:debug
   env:
     CIRRUS_WORKING_DIR: /workspace
-  build_script: executor --destination=cirrus:local --tarPath=/tmp/image.tar --context=$CIRRUS_WORKING_DIR
+  build_script: executor --destination=cirrus:local --tarPath=/tmp/image.tar
